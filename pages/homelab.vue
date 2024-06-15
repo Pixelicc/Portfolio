@@ -49,7 +49,7 @@
       </UTooltip>
       <UTooltip>
         <template #text>
-          Daily consumption resets everyday at 00:00 German time
+          Daily consumption resets at 00:00 German time
         </template>
         <UBadge variant="subtle" color="yellow" class="mx-2">
           <UIcon name="i-heroicons-bolt-16-solid" />
