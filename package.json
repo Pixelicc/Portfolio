@@ -24,5 +24,8 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "@vercel/analytics": "^1.3.1"
+  }
 }
