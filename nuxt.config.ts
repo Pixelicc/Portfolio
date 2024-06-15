@@ -33,6 +33,12 @@ export default defineNuxtConfig({
       dynamic: true,
     },
   },
+  ogImage: {
+    enabled: false,
+  },
+  seoExperiments: {
+    enabled: false,
+  },
   googleFonts: {
     families: {
       Inter: true,
