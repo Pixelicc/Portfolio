@@ -2,13 +2,15 @@ import { PersonalLocation } from "~/types";
 
 export default defineEventHandler(async () => {
   try {
-    const location = await (
-      await fetch(`https://api.pixelic.dev/v2/location`, {
-        headers: {
-          Authorization: process.env.PERSONAL_API_TOKEN as string,
-        },
-      })
-    ).json();
+    const location = (
+      await (
+        await fetch(`https://api.pixelic.dev/v2/location`, {
+          headers: {
+            Authorization: process.env.PERSONAL_API_TOKEN as string,
+          },
+        })
+      ).json()
+    ).location;
     return {
       country: {
         name: location.country.name,
