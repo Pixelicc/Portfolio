@@ -1,4 +1,5 @@
 export type Socials = {
+  name: string;
   text: string;
   icon: string;
   url: string;

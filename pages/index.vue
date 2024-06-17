@@ -43,7 +43,11 @@
         <div>
           <UIcon class="-mt-1" :name="'i-' + social.icon" dynamic></UIcon>
           <a class="ml-2 text-pink-400 underline" :href="social.url">
-            {{ social.text }}
+            {{
+              social.name === "E-Mail" || social.name === "Discord Server"
+                ? social.name
+                : social.text
+            }}
           </a>
         </div>
       </span>
