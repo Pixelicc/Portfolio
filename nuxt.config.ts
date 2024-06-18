@@ -11,9 +11,6 @@ export default defineNuxtConfig({
     defaultLocale: "en",
   },
   routeRules: {
-    "/": {
-      swr: 60,
-    },
     "/setup": {
       swr: 3600,
     },
