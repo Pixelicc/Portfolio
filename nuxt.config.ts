@@ -24,8 +24,8 @@ export default defineNuxtConfig({
       swr: 30,
     },
     "/api/location": {
-      cache: {
-        maxAge: 300,
+      headers: {
+        "Cache-Control": "public, s-maxage=300, stale-while-revalidate=30",
       },
     },
   },
