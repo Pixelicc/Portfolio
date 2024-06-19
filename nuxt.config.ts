@@ -23,6 +23,11 @@ export default defineNuxtConfig({
     "/homelab": {
       swr: 30,
     },
+    "/api/location": {
+      cache: {
+        maxAge: 300,
+      },
+    },
   },
   colorMode: {
     preference: "dark",
