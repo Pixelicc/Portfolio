@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: false },
   nitro: {
-    preset: "bun",
+    preset: "node",
   },
   site: {
     url: "https://pixelic.dev",
