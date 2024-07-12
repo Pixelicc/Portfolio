@@ -13,6 +13,7 @@ export default defineEventHandler(async () => {
     ).location;
     return {
       country: {
+        prefix: location.country.prefix,
         name: location.country.name,
         code: location.country.code,
       },

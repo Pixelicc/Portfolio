@@ -127,6 +127,7 @@ export type SetupSpecs = {
 
 export type PersonalLocation = {
   country: {
+    prefix: null | "the";
     name: string;
     code: string;
   };

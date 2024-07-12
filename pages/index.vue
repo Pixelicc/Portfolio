@@ -10,7 +10,9 @@
         <ClientOnly>
           <span>
             I currently reside in
-            <span class="text-purple-300">{{ country }}</span>
+            <span class="text-purple-300">
+              {{ countryPrefix ? `${countryPrefix} ` : "" }}{{ country }}
+            </span>
             and it's
             <span class="text-purple-300">{{ time }}</span
             >.
@@ -65,6 +67,8 @@ const { data: socials } = useFetch<{ socials: Socials }>(
 const { data: location } = await useFetch("/api/location");
 
 const country = location.value?.country.name;
+const countryPrefix = location?.value?.country.prefix;
+
 const time = ref(
   new Date().toLocaleTimeString("en-GB", {
     timeZone: location.value?.time.timezone,
