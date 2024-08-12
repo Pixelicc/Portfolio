@@ -22,7 +22,7 @@
     "@nuxtjs/google-fonts": "^3.2.0",
     "@nuxtjs/seo": "^2.0.0-rc.16",
     "nuxt": "^3.12.4",
-    "prettier-plugin-tailwindcss": "^0.6.4",
+    "prettier-plugin-tailwindcss": "^0.6.6",
     "vue": "^3.4.35",
     "vue-router": "^4.3.2"
   }
