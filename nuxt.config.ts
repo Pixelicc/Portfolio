@@ -50,4 +50,5 @@ export default defineNuxtConfig({
     },
   },
   modules: ["@nuxt/ui", "@nuxtjs/seo", "@nuxtjs/google-fonts"],
+  compatibilityDate: "2024-10-27",
 });
