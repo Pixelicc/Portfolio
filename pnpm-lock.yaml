@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@vercel/analytics':
-        specifier: ^1.3.1
-        version: 1.3.1
+        specifier: ^1.4.0
+        version: 1.4.0(vue-router@4.4.5(vue@3.5.12(typescript@5.5.3)))(vue@3.5.12(typescript@5.5.3))
       '@vercel/speed-insights':
         specifier: ^1.0.14
         version: 1.0.14(vue-router@4.4.5(vue@3.5.12(typescript@5.5.3)))(vue@3.5.12(typescript@5.5.3))
@@ -1317,15 +1317,30 @@ packages:
     resolution: {integrity: sha512-moeDEq5d9mB8gSYeoqHMkXWWekaFFdhg7QCuwwCbxCc+NPMOgGkmfAoafz+y2tdvK7pEuT191RWOiHQ0MkA5oQ==}
     engines: {node: '>=14'}
 
-  '@vercel/analytics@1.3.1':
-    resolution: {integrity: sha512-xhSlYgAuJ6Q4WQGkzYTLmXwhYl39sWjoMA3nHxfkvG+WdBT25c563a7QhwwKivEOZtPJXifYHR1m2ihoisbWyA==}
+  '@vercel/analytics@1.4.0':
+    resolution: {integrity: sha512-eUwWW7l8nPJb0nJmjZuYp9o7YZ9XPj67lU9mEogaPXiFxq/SFB5DMnvQVk4aKcL8kFgotiYdDZWxdiNcWo7cgg==}
     peerDependencies:
+      '@remix-run/react': ^2
+      '@sveltejs/kit': ^1 || ^2
       next: '>= 13'
-      react: ^18 || ^19
+      react: ^18 || ^19 || ^19.0.0-rc
+      svelte: '>= 4'
+      vue: ^3
+      vue-router: ^4
     peerDependenciesMeta:
+      '@remix-run/react':
+        optional: true
+      '@sveltejs/kit':
+        optional: true
       next:
         optional: true
       react:
+        optional: true
+      svelte:
+        optional: true
+      vue:
+        optional: true
+      vue-router:
         optional: true
 
   '@vercel/nft@0.26.5':
@@ -3714,9 +3729,6 @@ packages:
     resolution: {integrity: sha512-VqpjJZKadQB/PEbEwvFdO43Ax5dFBZ2UECszz8bQ7pi7wt//PWe1P6MN7eCnjsatYtBT6EuiClbjSWP2WrIoTw==}
     engines: {node: '>= 0.8.0'}
 
-  server-only@0.0.1:
-    resolution: {integrity: sha512-qepMx2JxAa5jjfzxG79yPPq+8BuFToHd1hm7kI+Z4zAq1ftQiP7HcxMhDDItrbtwVeLg/cY2JnKnrcFkmiswNA==}
-
   set-blocking@2.0.0:
     resolution: {integrity: sha512-KiKBS8AnWGEyLzofFfmvKwpdPzqiy16LvQfK3yv/fVH7Bj13/wl3JSR1J+rfgRE9q7xUJK4qvgS8raSOeLUehw==}
 
@@ -6013,9 +6025,10 @@ snapshots:
       '@unocss/core': 0.63.6
       magic-string: 0.30.12
 
-  '@vercel/analytics@1.3.1':
-    dependencies:
-      server-only: 0.0.1
+  '@vercel/analytics@1.4.0(vue-router@4.4.5(vue@3.5.12(typescript@5.5.3)))(vue@3.5.12(typescript@5.5.3))':
+    optionalDependencies:
+      vue: 3.5.12(typescript@5.5.3)
+      vue-router: 4.4.5(vue@3.5.12(typescript@5.5.3))
 
   '@vercel/nft@0.26.5':
     dependencies:
@@ -8796,8 +8809,6 @@ snapshots:
       send: 0.19.0
     transitivePeerDependencies:
       - supports-color
-
-  server-only@0.0.1: {}
 
   set-blocking@2.0.0: {}
 
