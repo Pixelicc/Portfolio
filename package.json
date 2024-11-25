@@ -12,7 +12,7 @@
   "type": "module",
   "dependencies": {
     "@vercel/analytics": "^1.4.0",
-    "@vercel/speed-insights": "^1.0.14"
+    "@vercel/speed-insights": "^1.1.0"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
