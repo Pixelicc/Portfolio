@@ -99,10 +99,10 @@
 <script setup lang="ts">
 import type { HomelabSpecs, HomelabMetrics } from "~/types";
 
-const specs = useFetch<{ specs: HomelabSpecs }>(
+const { data: specs } = useFetch<{ specs: HomelabSpecs }>(
   "https://api.pixelic.dev/v2/homelab/specs",
 );
-const metrics = useFetch<{ metrics: HomelabMetrics }>(
+const { data: metrics } = useFetch<{ metrics: HomelabMetrics }>(
   "https://api.pixelic.dev/v2/homelab/metrics",
 );
 </script>
