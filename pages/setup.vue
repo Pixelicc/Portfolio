@@ -6,19 +6,19 @@
       </template>
       <UBadge variant="subtle" color="black">
         <UIcon name="i-heroicons-cpu-chip-16-solid" />
-        <span class="ml-1">CPU: {{ specs?.specs?.cpu?.name }}</span>
+        <span class="ml-1">CPU: {{ specs?.cpu?.name }}</span>
       </UBadge>
       <br />
       <br />
       <UBadge variant="subtle" color="black">
         <UIcon name="i-mdi-gpu" dynamic />
-        <span class="ml-1">GPU: {{ specs?.specs?.gpu?.name }}</span>
+        <span class="ml-1">GPU: {{ specs?.gpu?.name }}</span>
       </UBadge>
       <br />
       <br />
       <UBadge variant="subtle" color="black">
         <UIcon name="i-ri-ram-2-line" dynamic />
-        <span class="ml-1">RAM: {{ specs?.specs?.ram?.name }}</span>
+        <span class="ml-1">RAM: {{ specs?.ram?.name }}</span>
       </UBadge>
       <br />
       <br />
@@ -26,9 +26,8 @@
         <UIcon name="i-heroicons-folder-16-solid" />
         <span class="ml-1">
           Disks:
-          <span v-for="(disk, i) in specs?.specs?.disks">
-            {{ disk.name
-            }}{{ i + 1 === specs?.specs?.disks.length ? "" : " + " }}
+          <span v-for="(disk, i) in specs?.disks">
+            {{ disk.name }}{{ i + 1 === specs?.disks.length ? "" : " + " }}
           </span>
         </span>
       </UBadge>

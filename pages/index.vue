@@ -41,7 +41,7 @@
       </div>
     </div>
     <div class="ml-12 mt-0.5 text-lg">
-      <span v-for="social in socials?.socials">
+      <span v-for="social in socials">
         <div>
           <UIcon class="-mt-1" :name="'i-' + social.icon" dynamic></UIcon>
           <a class="ml-2 text-pink-400 underline" :href="social.url">
@@ -90,9 +90,9 @@ const weather = location.value?.weather.isRaining
   ? "rainy"
   : location.value?.weather.isSnowing
     ? "snowy"
-    : location?.value?.weather?.cloudCover ?? 0 > 95
+    : (location?.value?.weather?.cloudCover ?? 0 > 95)
       ? "cloudy"
-      : location?.value?.weather?.cloudCover ?? 0 > 75
+      : (location?.value?.weather?.cloudCover ?? 0 > 75)
         ? "partially cloudy"
         : "clear";
 const temperature = location?.value?.weather?.temperature.current ?? "N/A";
