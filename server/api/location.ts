@@ -10,7 +10,7 @@ export default defineEventHandler(async () => {
           },
         })
       ).json()
-    ).location;
+    );
     return {
       country: {
         prefix: location.country.prefix,
