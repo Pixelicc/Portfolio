@@ -39,7 +39,7 @@
 <script setup lang="ts">
 import type { SetupSpecs } from "~/types";
 
-const { data: specs } = await useFetch<{ specs: SetupSpecs }>(
+const specs = await useFetch<{ specs: SetupSpecs }>(
   "https://api.pixelic.dev/v2/setup/specs",
 );
 </script>
