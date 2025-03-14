@@ -54,7 +54,7 @@
               .sort(([a], [b]) => b - a)
               .map(([date, link]: string[]) => ({
                 label: date,
-                click: () =>
+                onSelect: () =>
                   navigateTo(link, {
                     external: true,
                     open: {
