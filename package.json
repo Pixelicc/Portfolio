@@ -16,7 +16,7 @@
     "@vercel/speed-insights": "^1.2.0",
     "nuxt": "^4.0.2",
     "vue": "^3.5.18",
-    "vue-router": "^4.5.1"
+    "vue-router": "^4.6.3"
   },
   "devDependencies": {
     "prettier-plugin-tailwindcss": "^0.6.14"
