@@ -11,11 +11,11 @@
   },
   "dependencies": {
     "@nuxt/image": "2.0.0",
-    "@nuxt/ui": "4.8.1",
+    "@nuxt/ui": "4.9.0",
     "@vercel/analytics": "^2.0.1",
     "@vercel/speed-insights": "^2.0.0",
-    "nuxt": "^4.4.6",
-    "vue": "^3.5.35",
+    "nuxt": "^4.4.8",
+    "vue": "^3.5.39",
     "vue-router": "^5.1.0"
   },
   "devDependencies": {
