@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: "2025-03-01",
+  compatibilityDate: "2026-09-15",
   experimental: {
     inlineRouteRules: true,
   },
